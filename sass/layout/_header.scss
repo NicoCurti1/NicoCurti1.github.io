@@ -1,0 +1,151 @@
+/*********************************
+            HEADER
+*********************************/
+.main-header {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked + .nav-bar {
+    display: block;
+}
+
+#menu:checked ~ .search-bar .menu-toggle__label {
+    background-color: yellow;
+}
+
+/*********************************
+            NAV BAR
+*********************************/
+.nav-bar {
+    background-color: mediumturquoise;
+}
+
+.nav-bar__nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.nav-bar__nav-item {
+    text-align: center;
+    background-color: pink;
+}
+
+.nav-bar__nav-link {
+    display: block;
+    background-color: purple;
+    color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+
+/*********************************
+            SEARCH BAR
+*********************************/
+.search-bar {
+    background-color: olivedrab;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar__logo-container,
+.search-bar__form-container {
+    padding: 1em;
+}
+
+.search-bar__logo-container {
+    background-color: yellow;
+}
+
+.search-bar__form-container {
+    background-color: gold;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar__form-label {
+    background-color: greenyellow;
+}
+
+.search-bar__form-search {
+    background-color: deeppink;
+    width: 70%;
+}
+
+.search-bar__form-submit {
+    background-color: darkslategray;
+}
+
+.search-bar__carrito-container {
+    flex: 0 0 3em;
+    background-color: goldenrod;
+}
+
+
+/*********************************
+            MENU TOGGLE
+*********************************/
+.menu-toggle {
+    display: none;
+    background-color: red;
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-toggle__label {
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-toggle__pan-arriba,
+.menu-toggle__medallon,
+.menu-toggle__pan-abajo {
+    display: block;
+    background-color: #333;
+    height: .2em;
+    position: absolute;
+    left: .5em;
+    right: .5em;
+    margin: 0 auto;
+}
+
+.menu-toggle__pan-arriba {
+    top: .8em;
+}
+.menu-toggle__medallon {
+    top: 50%;
+    margin-top: -.15em;
+}
+.menu-toggle__pan-abajo {
+    bottom: .8em;
+}
+
+@media (max-width: 768px) {
+
+    .main-header {
+        flex-direction: column-reverse;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar__nav-list {
+        flex-direction: column;
+    }
+
+}
