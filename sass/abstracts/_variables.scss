@@ -84,7 +84,7 @@ $shadow-color: #8a8a8a;
 }
 
 /*********************************
-            COMENTARIOS
+            COMENTARIOS INDEX
 *********************************/
 
 $text: #3858A2;
@@ -96,3 +96,16 @@ $grey-light: #e1e5eb;
 $grey-lighten: #edf0f5;
 $grey-dark: #acb4c2;
 $grey-darken: #848ea1;
+
+/*********************************
+            CARD HEAD
+*********************************/
+
+@keyframes roullete {
+    from { 
+        transform: translateY(0);
+    }
+    to { 
+        transform: translateY(-5.8em);
+    }
+}

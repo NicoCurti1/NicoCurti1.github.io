@@ -325,7 +325,7 @@ body {
 @media (max-width: 538px) {
   .review__profile {
     margin: 0 auto 1.5em auto;
-    transform: translatex(-25px) skew(0deg);
+    transform: translatex(0px) skew(0deg);
   }
 
   .review__text {
@@ -349,6 +349,5 @@ body {
 @media (max-width: 375px) {
   .review__brick {
     padding: 2em 1.8em;
-    
   }
 }
