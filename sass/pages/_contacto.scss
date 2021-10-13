@@ -1,0 +1,182 @@
+body {
+    background-color: #ebeff8;
+}
+
+/*********************************
+            TOP
+*********************************/
+
+.contact-pag__top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    background-image: url(../img/contacto/contacto-title.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*********************************
+            TITULO
+*********************************/
+
+.contact-pag__top__title {
+    text-align: center;
+    background-color: #3858a2d8;
+    font-size: 3em;
+    font-family: 'Overlock', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    padding: 1em 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/*********************************
+            FORMULARIO
+*********************************/
+
+.contact-container {
+    padding: 4em;
+    line-height: 1.6;
+    background: #3858A2;
+    color: #485e74;
+}
+
+.contact-container__company-list {
+    list-style: none;
+    line-height: 2em;
+}
+
+.wrapper-contact {
+    box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wrapper-contact > * {
+    padding: 1em;
+}
+
+.contact-data {
+    border: 0px;
+}
+
+.contact-data div {
+    padding-top: 15px;
+}
+
+.contact-container__company {
+    background: #C3C9DD;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 30%;
+}
+
+.contact-container__company p {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 0.8em;
+    margin-top: 0.5em;
+}
+
+.contact {
+    background: #dcdfea;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 50%;
+}
+
+.contact-form label {
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    border: solid 1px #627EDC;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 8em;
+    font-size: 16px;
+}
+
+.contact-data__button input {
+    background: #627EDC;
+    border: 0;
+    color: #e4e4e4;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0.7em;
+}
+
+.contact-data__button input:hover,
+.contact-data__button input:focus {
+    background: #3952a3;
+    color: #ffffff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+    cursor: pointer;
+}
+
+/*********************************
+            RESPONSIVE
+*********************************/
+
+@media (max-width: 890px) {
+
+    .wrapper-contact {
+        flex-direction: column;
+    }
+    
+    .contact-container__company {
+        background: #C3C9DD;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+    }
+
+    .contact {
+        background: #dcdfea;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+        width: 100%;
+    }
+
+    .contact-container {
+        padding: 2em;
+    }
+
+    .contact-form textarea {
+        height: 14em;
+    }
+
+    .contact-data__button{
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 890px) {
+    .contact-data__button{
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-data__button{
+        width: 100%;
+    }
+}

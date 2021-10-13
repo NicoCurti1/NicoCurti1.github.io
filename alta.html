@@ -5,9 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alta</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
 <body>
-    <h1>Alta</h1>
+    
+    <header class="header-all">
+            
+        <input type="checkbox" id="menu">
+
+        <div class="top-bar">
+
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span> 
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+
+            <p class="top-bar__welcome">Bienvenidos a Connecticus</p>
+            
+            <div class="top-bar__icons">
+                <a class="top-bar__wsp-link" href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="top-bar__insta-link" href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <header class="main-header">
+            <div class="nav-container">
+                
+                <nav class="nav-bar">
+                    <ul class="nav-bar__nav-list">
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                        </li>
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+
+                    <div class="search">
+                        <form class="search-bar">
+                            <input class="search-bar__input" type="search" placeholder="Encontrá lo que buscás...">
+                            <button type="submit" class="search-bar__btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </nav>
+                
+                <div class="nav-container__logo-container">
+                    <a href="index.html">
+                        <img class="nav-container__logo-container__image" src="img/nav/logo-2.png" alt="Connecticus">
+                    </a>
+                </div>
+                
+                <div class="nav-container__carrito-container">
+                    <a class="nav-container__carrito-container__button" href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+                </div> 
+                
+            </div>
+        </header>
+
+    </header>
+
+    <main>
+        <div class="alta-pag__top">
+            <p class="alta-pag__top__title">Alta</p>
+        </div>
+
+        <div class="alta-container">
+            <div class="wrapper-alta">
+                <div class="alta-container__company">
+                    <p>Producto</p>
+                </div>
+                
+                <div class="alta">
+                    <form class="alta-form" action="altaProducto.php" method="post" enctype="multipart/form-data">
+                        <fieldset class="alta-data">
+                            <div>
+                                <label for="name">Nombre</label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            
+                            <div class="alta-data__short-list">
+                                <div>
+                                    <label for="price">Precio</label>
+                                    <span class="price-icon">$</span>
+                                    <input type="number" name="price" id="price" min="0" required>
+                                </div>
+
+                                <div>
+                                    <label for="stock">Stock</label>
+                                    <input type="number" name="stock" id="stock" required value="0" min="0" step="1">
+                                </div>
+
+                                <div>
+                                    <label for="mark">Marca</label>
+                                    <input type="text" name="mark" id="mark" required>
+                                </div>
+
+                                <div>
+                                    <label for="category">Categorias</label>
+                                    <select name="category" id="category" required>
+                                        <option>Seleccionar</option>
+                                        <optgroup label="-">
+                                            <option value="1">Televisores</option>
+                                            <option value="2">Celulares</option>
+                                            <option value="3">PC & Notebooks</option>
+                                            <option value="4">Otros</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="alta-data__photo">
+                                <label for="photo">Carga tu foto</label>
+                                <input type="file" name="photo" id="photo" required>
+                            </div>
+
+                            <div class="alta-data__shipping">
+                                <input type="checkbox" name="shipping" id="shipping" value="si">
+                                <label for="shipping">Envío sin cargo</label>
+                            </div>
+
+                            <div class="alta-data__detalles">
+                                <label for="message">Detalles</label>
+                                <textarea name="message" id="message"></textarea>
+                            </div>
+            
+                            <div class="alta-data__button">
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Restablecer">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="site-footer">
+            <p class="data-text">+54 341-5122424<span class="data-text__separador"> | </span> <span class="data-text__location">Rosario, Santa Fé, Argentina</span><span class="data-text__separador"> | </span> Avenida Pellegrini 1234.</p>
+            <div class="nav-bar__footer_separador"></div>
+            <div class="site-footer__copy-icon">
+                <ul class="site-footer__social-icons">
+                    <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>   
+                </ul>
+            </div>
+            <div class="nav-bar__footer_title">
+                <img class="nav-bar__footer_title-image" src="img/nav/Logo-1.png" alt="Connecticus">
+            </div>
+            <nav class="nav-bar__footer">
+                <ul class="nav-bar__footer__nav-list">
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="alta.html">Alta</a>
+                    </li>
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <div class="nav-bar__footer_separador"></div>
+            </nav>
+            <p class="copyright-text">&copy; Copyright 2021.  <span class="copyright-text__separador">| </span> <span class="copyright-text__webmaster">Nicolas Curti WEBMASTER</span> <span class="copyright-text__separador">|</span>  All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

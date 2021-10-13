@@ -1,0 +1,98 @@
+/*********************************
+            HEADER
+*********************************/
+
+$transition: .15s ease all;
+$transition-long: .3s ease all; 
+
+/*********************************
+            SEARCH BAR
+*********************************/
+
+$white: #ffffff;
+$black: #000000;
+$orange: #3858a1;
+$blue: #5574BB;
+$ease: all .3s ease;
+
+/*********************************
+            CARRITO
+*********************************/
+
+$btn-color: rgb(77, 77, 77);
+$shadow-color: #8a8a8a;
+
+@keyframes shadowFloat {
+
+    0% {
+		box-shadow: 0 20px 40px $shadow-color;
+		transform: translateY(-3px);
+	}
+    100% {
+		box-shadow: 0 10px 10px darken($shadow-color, 5%);
+		transform: translateY(3px); 
+	}
+}
+
+/*********************************
+            SLIDE BAR
+*********************************/
+
+@keyframes tonext {
+    75% {
+        left: 0;
+    }
+    95% {
+        left: 100%;
+    }
+    98% {
+        left: 100%;
+    }
+    99% {
+        left: 0;
+    }
+}
+
+@keyframes tostart {
+    75% {
+        left: 0;
+    }
+    95% {
+        left: -300%;
+    }
+    98% {
+        left: -300%;
+    }
+    99% {
+        left: 0;
+    }
+}
+
+@keyframes snap {
+    96% {
+        scroll-snap-align: center;
+    }
+    97% {
+        scroll-snap-align: none;
+    }
+    99% {
+        scroll-snap-align: none;
+    }
+    100% {
+        scroll-snap-align: center;
+    }
+}
+
+/*********************************
+            COMENTARIOS
+*********************************/
+
+$text: #3858A2;
+$parraf: #333;
+$link: #0095ff;
+$base: #fafbfc;
+$grey: #ced2db;
+$grey-light: #e1e5eb;
+$grey-lighten: #edf0f5;
+$grey-dark: #acb4c2;
+$grey-darken: #848ea1;

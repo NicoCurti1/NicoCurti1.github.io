@@ -5,11 +5,161 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
 <body>
-    <h1>Contacto</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vel suscipit asperiores fugiat quasi, nostrum mollitia! Assumenda, animi quasi laboriosam impedit officia ex dicta quis, aut adipisci sequi ducimus beatae.</p>
-    <p>Minus rem rerum, qui eveniet soluta consectetur sapiente temporibus necessitatibus earum quas quia aut nostrum totam repellat accusamus nobis optio ex. Sed corporis deleniti eveniet voluptates! Quas doloremque cumque nesciunt.</p>
+    
+    <header class="header-all">
+            
+        <input type="checkbox" id="menu">
+
+        <div class="top-bar">
+
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span> 
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+
+            <p class="top-bar__welcome">Bienvenidos a Connecticus</p>
+            
+            <div class="top-bar__icons">
+                <a class="top-bar__wsp-link" href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="top-bar__insta-link" href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <header class="main-header">
+            <div class="nav-container">
+                
+                <nav class="nav-bar">
+                    <ul class="nav-bar__nav-list">
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                        </li>
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+
+                    <div class="search">
+                        <form class="search-bar">
+                            <input class="search-bar__input" type="search" placeholder="Encontrá lo que buscás...">
+                            <button type="submit" class="search-bar__btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </nav>
+                
+                <div class="nav-container__logo-container">
+                    <a href="index.html">
+                        <img class="nav-container__logo-container__image" src="img/nav/logo-2.png" alt="Connecticus">
+                    </a>
+                </div>
+                
+                <div class="nav-container__carrito-container">
+                    <a class="nav-container__carrito-container__button" href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+                </div> 
+                
+            </div>
+        </header>
+
+    </header>
+
+    <main>
+        <div class="contact-pag__top">
+            <p class="contact-pag__top__title">Contacto</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="wrapper-contact">
+                <div class="contact-container__company">
+                    <p>Connecticus</p>
+                    <ul class="contact-container__company-list">
+                        <li><i class="fa fa-road"></i> Rosario, Santa Fé, Argentina</li>
+                        <li><i class="fa fa-phone"></i> +54 341-5122424</li>
+                        <li><i class="fa fa-envelope"></i> connecticus@gmail.com</li>
+                    </ul>
+                </div>
+                
+                <div class="contact">
+                    <form class="contact-form" action="altaContacto.php" method="post" enctype="multipart/form-data">
+                        <fieldset class="contact-data">
+                            <div>
+                                <label for="name">Nombre</label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+            
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+            
+                            <div>
+                                <label for="message">Comentarios</label>
+                                <textarea name="message" id="message" required></textarea>
+                            </div>
+            
+                            <div class="contact-data__button">
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Restablecer">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="site-footer">
+            <p class="data-text">+54 341-5122424<span class="data-text__separador"> | </span> <span class="data-text__location">Rosario, Santa Fé, Argentina</span><span class="data-text__separador"> | </span> Avenida Pellegrini 1234.</p>
+            <div class="nav-bar__footer_separador"></div>
+            <div class="site-footer__copy-icon">
+                <ul class="site-footer__social-icons">
+                    <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>   
+                </ul>
+            </div>
+            <div class="nav-bar__footer_title">
+                <img class="nav-bar__footer_title-image" src="img/nav/Logo-1.png" alt="Connecticus">
+            </div>
+            <nav class="nav-bar__footer">
+                <ul class="nav-bar__footer__nav-list">
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="alta.html">Alta</a>
+                    </li>
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <div class="nav-bar__footer_separador"></div>
+            </nav>
+            <p class="copyright-text">&copy; Copyright 2021.  <span class="copyright-text__separador">| </span> <span class="copyright-text__webmaster">Nicolas Curti WEBMASTER</span> <span class="copyright-text__separador">|</span>  All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

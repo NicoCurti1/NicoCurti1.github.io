@@ -1,0 +1,102 @@
+body {
+    background-color: #ebeff8;
+}
+
+/*********************************
+            TOP
+*********************************/
+
+.carrito-pag__top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    background-image: url(../img/carrito/carrito-main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*********************************
+            TITULO
+*********************************/
+
+.carrito-pag__top__title {
+    text-align: center;
+    background-color: #3858a2d8;
+    font-size: 3em;
+    font-family: 'Overlock', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    padding: 1em 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/*********************************
+            CONTENIDO
+*********************************/
+
+.carrito-pag__bot {
+    padding: 60px 0px 60px 0px;
+}
+
+.carrito-pag__text {
+    width: 80%;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    padding: 20px 15px 20px 15px;
+    background-color: #333;
+    color: #fff;
+}
+
+/*********************************
+            BUTTON
+*********************************/
+
+.carrito-text__button {
+    height: 100px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+}
+
+.button-rollover-carrito {
+    background-color: #3858A2;
+    border: 2px solid #ddd;
+    border-radius: 7px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 600;
+    height: 60px;
+    line-height: 40px;
+    letter-spacing: 1px;    
+    overflow: hidden;
+    padding: 7px 25px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.button-rollover-carrito:hover {
+    background-color: transparent;
+    border: 2px solid #3858A2;
+}
+
+.roll-text {
+    display: block;
+    position: relative;
+    transition: all 420ms cubic-bezier(.175,.885,.32,1.275);
+}
+
+.roll-text-carrito {
+    color: #3858A2;
+}
+
+.button-rollover-carrito:hover .roll-text:first-child {
+    margin-top: -38px;
+}

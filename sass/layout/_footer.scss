@@ -1,0 +1,173 @@
+/*********************************
+            FOOTER
+*********************************/
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: rgba(19, 18, 18, 0.925);
+    background-image: url(../img/pages/bg-footer.png);
+    background-size: cover;
+    color: #ddd;
+}
+
+/*********************************
+            COPY
+*********************************/
+
+.data-text {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 3px 5px 3px;
+    line-height: 2em;
+}
+
+.data-text__separador {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.data-text__location {
+    font-size: 1.1em;
+    text-shadow: rgba(255, 255, 255, 0.418) 0px 0px 5px, 
+    rgba(255, 255, 255, 0.356) 0px 0px 10px, 
+    rgba(255, 255, 255, 0.281) 0px 0px 15px, 
+    #2023bd83 0px 0px 10px, 
+    #2023bd83 0px 0px 20px, 
+    #2023bd83 0px 0px 30px, 
+    #2023bd83 0px 0px 40px, 
+    #2023bd83 0px 0px 65px, 
+    18px 0px 7px rgba(93,206,148,0);
+    color: #fff;
+}
+
+/*********************************
+            ICONOS
+*********************************/
+
+.site-footer__social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.site-footer__social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.site-footer__social-icons a {
+    background-color: rgb(20, 20, 20);
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.site-footer__social-icons a:active,
+.site-footer__social-icons a:focus,
+.site-footer__social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe;
+}
+
+.site-footer__social-icons a.facebook:hover {
+    background-color: #3b5998;
+}
+
+.site-footer__social-icons a.twitter:hover {
+    background-color: #00aced;
+}
+
+.site-footer__social-icons a.linkedin:hover {
+    background-color: #007bb6;
+}
+
+.site-footer__social-icons a.dribbble:hover {
+    background-color: #ea4c89;
+}
+
+/*********************************
+            NAV BAR IMAGE
+*********************************/
+
+.nav-bar__footer_title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.nav-bar__footer_title-image {
+    width: 50px;
+}
+
+/*********************************
+            NAV BAR FOOTER
+*********************************/
+
+.nav-bar__footer__nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.nav-bar__footer__nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    display: block;
+    color: #ddd;
+    padding: 0.8em 1em;
+    text-decoration: none;
+}
+
+.nav-bar__footer__nav-link:hover {
+    font-size: 0.83em;
+}
+
+/*********************************
+            SEPARADORES
+*********************************/
+
+.nav-bar__footer_separador {
+    border-bottom: #bbb solid 2px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.5;
+    padding-top: 10px;
+}
+
+/*********************************
+            COPY
+*********************************/
+
+.copyright-text {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 2em;
+}
+
+.copyright-text__separador {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.copyright-text__webmaster {
+    font-size: 1.1em;
+    font-weight: bold;
+}

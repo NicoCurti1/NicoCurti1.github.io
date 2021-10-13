@@ -5,9 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
 <body>
-    <h1>Nosotros</h1>
+
+    <header class="header-all">
+            
+        <input type="checkbox" id="menu">
+
+        <div class="top-bar">
+
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span> 
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+
+            <p class="top-bar__welcome">Bienvenidos a Connecticus</p>
+            
+            <div class="top-bar__icons">
+                <a class="top-bar__wsp-link" href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="top-bar__insta-link" href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <header class="main-header">
+            <div class="nav-container">
+                
+                <nav class="nav-bar">
+                    <ul class="nav-bar__nav-list">
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                        </li>
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-bar__nav-item">
+                            <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+
+                    <div class="search">
+                        <form class="search-bar">
+                            <input class="search-bar__input" type="search" placeholder="Encontrá lo que buscás...">
+                            <button type="submit" class="search-bar__btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </nav>
+                
+                <div class="nav-container__logo-container">
+                    <a href="index.html">
+                        <img class="nav-container__logo-container__image" src="img/nav/logo-2.png" alt="Connecticus">
+                    </a>
+                </div>
+                
+                <div class="nav-container__carrito-container">
+                    <a class="nav-container__carrito-container__button" href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+                </div> 
+                
+            </div>
+        </header>
+
+    </header>
+
+    <main class="nosotros-parallax">
+        <div class="parallax">
+            <p class="parallax-title">SOBRE NOSOTROS</p>
+        </div>
+        <div class="parallax-text">
+            <p>En el año 1997, Connecticus llegó a Rosario asumiendo un gran compromiso: ser una empresa para todos los argentinos y con la visión de brindar, la mejor experiencia a servicio del Cliente, desde el usuario Hogareño, hasta las Grandes empresas, con un servicio de asesoramiento y ventas, de equipos informáticos y productos electrónicos, además de un excelente servicio de post-venta permanente.</p>
+            <br>
+            <p>Con la vocación hacia el cliente que caracteriza la filosofía de la empresa, nos pusimos a trabajar arduamente. Hoy, a casi 23 años de planteado el desafío, nos sentimos orgullosos de lo logrado. Estamos convencidos de que éxito obtenido no hubiese sido posible sin la lealtad de nuestros clientes, proveedores, socios estratégicos y el apoyo de instituciones y autoridades. Destacando en forma especial que tal éxito se basa sobre todo en los valores, comportamientos y en la capacidad de nuestros empleados.</p>
+            <br>
+            <p>Sin embargo, el liderazgo alcanzado no solo nos gratifica sino que nos obliga día a día a esmerarnos más por brindar el mejor servicio y los más altos estándares en nuestros productos a todos nuestro clientes que visitan nuestro local, así como también establecer relaciones integradas, respetuosas y de colaboración con cada comunidad en la que estamos presentes, y a fortalecer y potenciar las capacidades de los jóvenes que conforman la gran familia de Connecticus s.r.l está presente a lo largo y ancho de nuestro país a través de nuestro servicio de entregas, además de nuestro sitio Web, y su objetivo es aumentar aún más esta presencia, como una forma de servir sin distinción alguna a todos los argentinos. </p>
+            <br>
+            <p>Somos una empresa con una amplia trayectoria en la venta de una gran variedad de productos tecnológicos. Contamos con LOCAL a la calle para poder brindarle la mejor atención y un excelente servicio de postventa para satisfacer las exigencias de nuestros clientes.</p>
+            <br>
+            <p>Cualquier consulta que tengas no dudes en ponerte en contacto con nosotros.</p>
+
+            <div class="parallax-text__button">
+                <a class="button-rollover" href="contacto.html">
+                    <span class="roll-text">Contactanos</span>
+                    <span class="roll-text">Gracias!</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="site-footer">
+            <p class="data-text">+54 341-5122424<span class="data-text__separador"> | </span> <span class="data-text__location">Rosario, Santa Fé, Argentina</span><span class="data-text__separador"> | </span> Avenida Pellegrini 1234.</p>
+            <div class="nav-bar__footer_separador"></div>
+            <div class="site-footer__copy-icon">
+                <ul class="site-footer__social-icons">
+                    <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>   
+                </ul>
+            </div>
+            <div class="nav-bar__footer_title">
+                <img class="nav-bar__footer_title-image" src="img/nav/Logo-1.png" alt="Connecticus">
+            </div>
+            <nav class="nav-bar__footer">
+                <ul class="nav-bar__footer__nav-list">
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="alta.html">Alta</a>
+                    </li>
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-bar__footer__nav-item">
+                        <a class="nav-bar__footer__nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <div class="nav-bar__footer_separador"></div>
+            </nav>
+            <p class="copyright-text">&copy; Copyright 2021.  <span class="copyright-text__separador">| </span> <span class="copyright-text__webmaster">Nicolas Curti WEBMASTER</span> <span class="copyright-text__separador">|</span>  All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

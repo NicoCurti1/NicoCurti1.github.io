@@ -1,0 +1,136 @@
+body {
+    background-color: #ebeff8;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/*********************************
+            IMAGEN
+*********************************/
+
+.nosotros-parallax {
+    background-image: url(../img/nosotros/bg-nosotros.png);
+}
+
+.parallax {
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.parallax, .parallax:before {
+    background: 50% 50% / cover;
+}
+
+.parallax::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-color: #8a8;
+    background-image: url(../img/nosotros/nosotros.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 150vh;
+}
+
+.parallax * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+/*********************************
+            TITULO
+*********************************/
+
+.parallax-title {
+    background-color: #3858a2d8;
+    font-size: 3em;
+    font-family: 'Overlock', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*********************************
+            TEXTO
+*********************************/
+
+.parallax-text {
+    line-height: 1.7;
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 0px 100px 0px;
+    text-align: justify;
+}
+
+.parallax-text p:last-of-type {
+    font-weight: bold;
+    text-align: center;
+}
+
+/*********************************
+            BUTTON
+*********************************/
+
+.parallax-text__button {
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.button-rollover {
+    background-color: #333;
+    border: 2px solid #ddd;
+    border-radius: 7px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin: 5px;
+    overflow: hidden;
+    padding: 0 22px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.button-rollover:hover {
+    background-color: transparent;
+    border: 2px solid #333;
+}
+
+.roll-text {
+    display: block;
+    position: relative;
+    transition: all 420ms cubic-bezier(.175,.885,.32,1.275);
+}
+
+.roll-text:last-child {
+    color: #333;
+}
+
+.button-rollover:hover .roll-text:first-child {
+    margin-top: -38px;
+}

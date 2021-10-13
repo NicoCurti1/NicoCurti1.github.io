@@ -1,0 +1,244 @@
+body {
+    background-color: #ebeff8;
+}
+
+/*********************************
+            TOP
+*********************************/
+
+.alta-pag__top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    height: 300px;
+    background-image: url(../img/alta/alta-title.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*********************************
+            TITULO
+*********************************/
+
+.alta-pag__top__title {
+    text-align: center;
+    background-color: #3858a2d8;
+    font-size: 3em;
+    font-family: 'Overlock', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    padding: 1em 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/*********************************
+            FORMULARIO
+*********************************/
+
+.alta-container {
+    padding: 6em;
+    line-height: 1.6;
+    background: #3858A2;
+    color: #304253;
+}
+
+.wrapper-alta {
+    box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper-alta > * {
+    padding: 1em;
+}
+
+.alta-data {
+    border: 0px;
+}
+
+.alta-data div {
+    padding-top: 15px;
+}
+
+.alta-container__company {
+    background: #C3C9DD;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.alta-container__company p {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+.alta {
+    background: #dcdfea;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.alta-data__short-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.alta-data__short-list div {
+    padding: 0.5em;
+    width: 10em;
+}
+
+.alta-form label {
+    display: block;
+}
+
+.alta-form input,
+.alta-form textarea,
+.alta-form select {
+    width: 100%;
+    padding: 0.7em;
+    border: solid 1px #627EDC;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.alta-form textarea {
+    resize: none;
+    height: 8em;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.alta-data__detalles label {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/*********************************
+            FOTO
+*********************************/
+
+.alta-data__photo label {
+    background: #5574BB;
+    padding: 5px 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all .4s;
+    border-radius: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.alta-data__photo label:hover,
+.alta-data__photo label:focus {
+    background: #8bbbeb;
+    color: #414141;
+    cursor: pointer;
+}
+
+/*********************************
+            ENVIO
+*********************************/
+
+.alta-data__shipping {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.alta-data__shipping input {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin: 5px 10px 5px 10px;
+}
+
+.alta-data__shipping label {
+    margin-right: 25px;
+}
+
+/*********************************
+            BOTONES
+*********************************/
+
+.alta-data__button input {
+    background: #627EDC;
+    border: 0;
+    color: #e4e4e4;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0.7em;
+    padding: 1em;
+}
+
+.alta-data__button input:hover,
+.alta-data__button input:focus {
+    background: #3952a3;
+    color: #ffffff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+    cursor: pointer;
+}
+
+/********* FIN BOTONES ***********/
+
+.alta-data__short-list input:first-of-type {
+    padding: 1em;
+}
+
+.price-icon {
+    position: absolute;
+    line-height: 52px;
+    width: 21px;
+    color: #a09f9f;
+    text-align: center;
+}
+
+/*********************************
+            RESPONSIVE
+*********************************/
+
+@media (max-width: 768px)  {
+
+    .wrapper-alta {
+        width: 90%;
+    }
+
+    .alta {
+        width: 100%;
+    }
+
+    .alta-container {
+        padding: 2em;
+    }
+
+    .alta-form textarea {
+        height: 14em;
+    }
+
+    .alta-data__button{
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .alta-data__photo label {
+        width: 100%;
+    }
+
+}
