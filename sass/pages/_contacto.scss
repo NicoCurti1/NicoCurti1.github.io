@@ -37,22 +37,19 @@ body {
 *********************************/
 
 .contact-container {
-    padding: 4em;
-    line-height: 1.6;
-    background: #3858A2;
+    background-image: url(../img/contacto/contacto-bg.png);
+    background-size: cover;
+    background-color: #3858a2d8;
     color: #485e74;
 }
 
-.contact-container__company-list {
-    list-style: none;
-    line-height: 2em;
-}
-
 .wrapper-contact {
-    box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 1180px;
+    margin: auto;
+    padding: 3em;
 }
 
 .wrapper-contact > * {
@@ -68,15 +65,30 @@ body {
 }
 
 .contact-container__company {
-    background: #C3C9DD;
+    background-image: url(../img/contacto/contacto-form.jpg);
+    background-size: cover;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    width: 30%;
+    width: 45%;
+    color: #fff;
+    box-shadow: 0 0 20px 0 rgba(46, 77, 180, 0.7);
+}
+
+.contact-container__company-list {
+    list-style: none;
+    line-height: 2em;
+}
+
+.company--separador{
+    background-color: #fff;
+    height: 0.1em;
+    width: 85%;
+    margin-bottom: 3em;
 }
 
 .contact-container__company p {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2.5em;
     padding-bottom: 0.8em;
     margin-top: 0.5em;
 }
@@ -85,11 +97,12 @@ body {
     background: #dcdfea;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 50%;
+    width: 60%;
+    box-shadow: 0 0 20px 0 rgba(46, 77, 180, 0.7);
 }
 
-.contact-form label {
-    display: block;
+.contact--input:focus, .contact--textarea:focus {
+    outline: #D50081 1px solid;
 }
 
 .contact-form input,
@@ -99,53 +112,62 @@ body {
     border: solid 1px #627EDC;
     border-radius: 5px;
     font-size: 1em;
+    margin-top: .5em;
+    background-color: rgba(255, 255, 255, 0.425);
 }
 
 .contact-form textarea {
     resize: none;
     height: 8em;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contact-data__button input {
-    background: #627EDC;
-    border: 0;
-    color: #e4e4e4;
+    background: #D50081;
+    color: #fff;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
     margin-top: 0.7em;
+    border: 0px;
 }
 
 .contact-data__button input:hover,
 .contact-data__button input:focus {
     background: #3952a3;
-    color: #ffffff;
+    color: #fff;
     outline: 0;
-    transition: background-color 2s ease-out;
+    transition: background-color 1s ease-out;
     cursor: pointer;
 }
+
 
 /*********************************
             RESPONSIVE
 *********************************/
 
+@media (max-width: 1240px) {
+
+    .wrapper-contact {
+        width: 90%;
+    }
+
+}
+
 @media (max-width: 890px) {
 
     .wrapper-contact {
         flex-direction: column;
+        width: 100%;
+        padding: 1.5em;
     }
     
     .contact-container__company {
-        background: #C3C9DD;
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 0px;
         width: 100%;
     }
 
     .contact {
-        background: #dcdfea;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
         border-top-right-radius: 0px;
@@ -173,6 +195,18 @@ body {
         margin-right: auto;
         margin-left: auto;
     }
+}
+
+@media (max-width: 425px) {
+
+    .contact-container__company p {
+        font-size: 1.8em;
+    }
+
+    .wrapper-contact {
+        padding: 0.8em;
+    }
+
 }
 
 @media (max-width: 320px) {

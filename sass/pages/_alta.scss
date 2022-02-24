@@ -39,16 +39,17 @@ body {
 .alta-container {
     padding: 6em;
     line-height: 1.6;
-    background: #3858A2;
     color: #304253;
+    background-image: url(../img/alta/alta-fondo.jpg);
+    background-size: cover;
 }
 
 .wrapper-alta {
-    box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+    box-shadow: 0 0 20px 0 rgba(90, 116, 204, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -66,13 +67,14 @@ body {
 }
 
 .alta-container__company {
-    background: #C3C9DD;
+    background: #D50081;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 .alta-container__company p {
     font-weight: bold;
+    color: #fff;
     font-size: 1.5em;
     margin-top: 0.5em;
 }
@@ -97,6 +99,11 @@ body {
 
 .alta-form label {
     display: block;
+    text-align: center;
+}
+
+label[for="name"] {
+    text-align: left;
 }
 
 .alta-form input,
@@ -104,7 +111,7 @@ body {
 .alta-form select {
     width: 100%;
     padding: 0.7em;
-    border: solid 1px #627EDC;
+    border: solid 1px #D50081;
     border-radius: 5px;
     font-size: 1em;
 }
@@ -127,7 +134,7 @@ body {
 *********************************/
 
 .alta-data__photo label {
-    background: #5574BB;
+    background: #D50081;
     padding: 5px 20px;
     color: #fff;
     font-weight: bold;
@@ -175,15 +182,21 @@ body {
             BOTONES
 *********************************/
 
+.alta-data__button {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 .alta-data__button input {
-    background: #627EDC;
+    background: #D50081;
     border: 0;
-    color: #e4e4e4;
+    color: #fff;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
     margin-top: 0.7em;
     padding: 1em;
+    width: 11em;
 }
 
 .alta-data__button input:hover,
@@ -191,7 +204,7 @@ body {
     background: #3952a3;
     color: #ffffff;
     outline: 0;
-    transition: background-color 2s ease-out;
+    transition: background-color 1s ease-out;
     cursor: pointer;
 }
 
@@ -212,6 +225,14 @@ body {
 /*********************************
             RESPONSIVE
 *********************************/
+
+@media (max-width: 1000px) {
+
+    .wrapper-alta {
+        width: 90%;
+    }
+
+} 
 
 @media (max-width: 768px)  {
 
@@ -239,6 +260,10 @@ body {
 
     .alta-data__photo label {
         width: 100%;
+    }
+
+    label[for="name"] {
+        text-align: center;
     }
 
 }

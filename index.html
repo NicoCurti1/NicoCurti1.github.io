@@ -12,11 +12,10 @@
 <body>
 
     <header class="header-all">
-            
+        
         <input type="checkbox" id="menu">
 
         <div class="top-bar">
-
             <div class="menu-toggle">
                 <label class="menu-toggle__label" for="menu">
                     <span class="menu-toggle__pan-arriba"></span>
@@ -35,28 +34,29 @@
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
+
         </div>
+        
+        <div class="top-bar_separador"></div>
 
         <div class="main-header">
-            <div class="nav-container">
-                
-                <nav class="nav-bar">
-                    <ul class="nav-bar__nav-list">
-                        <li class="nav-bar__nav-item">
-                            <a class="nav-bar__nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-bar__nav-item">
-                            <a class="nav-bar__nav-link" href="alta.html">Alta</a>
-                        </li>
-                        <li class="nav-bar__nav-item">
-                            <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-bar__nav-item">
-                            <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-                    </ul>
 
-                    <div class="search">
+            <div class="nav-container">
+
+                <div class="logo-container--media">
+                    <a href="index.html">
+                        <img class="logo-media" src="img/nav/logo-2.png" alt="Connecticus2">
+                    </a>
+                </div>
+
+                <div class="nav-container__isoSearchShipping-container">
+                    <div class="nav-container__logo-container--iso">
+                        <a href="index.html">
+                            <img class="logo-container--iso" src="img/nav/Logo-1.png" alt="Connecticus">
+                        </a>
+                    </div>
+
+                    <div class="nav-container__search">
                         <form class="search-bar">
                             <input class="search-bar__input" type="search" placeholder="Encontrá lo que buscás...">
                             <button type="submit" class="search-bar__btn">
@@ -64,64 +64,162 @@
                             </button>
                         </form>
                     </div>
-                </nav>
-                
-                <div class="nav-container__logo-container">
-                    <a href="index.html">
-                        <img class="nav-container__logo-container__image" src="img/nav/logo-2.png" alt="Connecticus">
-                    </a>
+
+                    <div class="nav-container__shipping">
+                        <i class="fas fa-gift"></i>
+                        <p class="shipping--text">Envíos gratis a partir de $3000</p>
+                    </div>
                 </div>
-                
-                <div class="nav-container__carrito-container">
-                    <a class="nav-container__carrito-container__button" href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
-                </div> 
-                
+
+                <div class="nav-container__logoNavbarCarritoRelleno-container">
+                    <div class="nav-container__logo-container">
+                        <div class="nav-container__logo-container--logo">
+                            <a href="index.html">
+                                <img class="logo-container--logo" src="img/nav/Logo-4.png" alt="Connecticus3">
+                            </a>
+                        </div>   
+                    </div>
+
+                    <div class="nav-container__nav-bar">
+                        <nav class="nav-bar">
+                            <ul class="nav-bar__nav-list">
+                                <li class="nav-bar__nav-item">
+                                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-bar__nav-item">
+                                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                                </li>
+                                <li class="nav-bar__nav-item">
+                                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-bar__nav-item">
+                                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                        <div class="nav-container__carrito-container">
+                            <a class="nav-container__carrito-container__button" href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div> 
+                    </div>
+
+                    <div class="nav-container__infoRelleno">
+                        <div class="infoRelleno--telefono">
+                            <i class="fas fa-phone-volume"></i>
+                            <p class="telefono--text">Venta telefónica</p>
+                        </div>
+                        <div class="infoRelleno--soporte">
+                            <i class="fas fa-cog"></i>
+                            <p class="soporte--text">Soporte las 24h</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
+
+        <section class="header-scroll" id ="headerSticky">
+
+            <div class="scroll-bar__container">
+                <a href="index.html" class="logo__scroll">
+                    <img class="scroll-bar--logo" src="img/nav/Logo-4.png" alt="Connecticus">
+                </a>
+
+                <nav class="nav-bar__scroll">
+                    <ul class="nav-scroll__list">
+                        <li class="nav-scroll__item">
+                            <a class="nav-scroll--link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-scroll__item">
+                            <a class="nav-scroll--link" href="alta.html">Alta</a>
+                        </li>
+                        <li class="nav-scroll__item">
+                            <a class="nav-scroll--link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-scroll__item">
+                            <a class="nav-scroll--link" href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
 
     </header>
 
     <main class="main-index">
 
-        <section class="carousel" aria-label="Gallery">
-            <ol class="carousel__viewport">
-                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                        <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
-                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                    </div>
-                </li>
-                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                    </div>
-                </li>
-                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>
-                    </div>
-                </li>
-            </ol>
-            <aside class="carousel__navigation">
-                <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide1" class="carousel__navigation-button"></a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide2" class="carousel__navigation-button"></a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide3" class="carousel__navigation-button"></a>
-                    </li>
-                </ol>
-            </aside>
+        <section class="categories">
+
+            <div class="categories-modulos">
+                <a class="tv-link" href="#cards-conteiner">
+                    <i class="fas fa-tv"></i>
+                </a>
+                <p class="modulos-p">Televisores</p>
+            </div>
+
+            <div class="categories-modulos">
+                <a class="phone-link" href="#cards-conteiner">
+                    <i class="fas fa-mobile-alt"></i>
+                </a>
+                <p class="modulos-p">Celulares</p>
+            </div>
+
+            <div class="categories-modulos">
+                <a class="tablet-link" href="#cards-conteiner">
+                    <i class="fas fa-tablet-alt"></i>
+                </a>
+                <p class="modulos-p">Tablets</p>
+            </div>
+
+            <div class="categories-modulos">
+                <a class="auris-link" href="#cards-conteiner">
+                    <i class="fas fa-headphones"></i>
+                </a>
+                <p class="modulos-p">Auriculares</p>
+            </div>
+
+            <div class="categories-modulos">
+                <a class="parlantes-link" href="#cards-conteiner">
+                    <i class="fas fa-drum-steelpan"></i>
+                </a>
+                <p class="modulos-p">Parlantes</p>
+            </div>
+
+            <div class="categories-modulos">
+                <a class="mas-link" href="#cards-conteiner">
+                    <i class="fas fa-plus"></i>
+                </a>
+                <p class="modulos-p">Más</p>
+            </div>
+
         </section>
 
-        <section class="section-cards">
+        <section class="slider-container">
+
+            <div class="slider" id="slider">
+                <div class="slider__modulo">
+                    <img src="img/index/slidefinal1.jpg" alt="Slide1" class="slider__modulo-img">
+                </div>
+                <div class="slider__modulo">
+                    <img src="img/index/slideFinal2.jpg" alt="Slide2" class="slider__modulo-img">
+                </div>
+                <div class="slider__modulo">
+                    <img src="img/index/slideFinal3.jpg" alt="Slide3" class="slider__modulo-img">
+                </div>
+            </div>
+
+            <div class="slider__btn slider__btn--rigth" id="slider__btn-rigth">
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <div class="slider__btn slider__btn--left" id="slider__btn-left">
+                <i class="fas fa-angle-left"></i>
+            </div>
+
+        </section>
+
+        <section class="section-cards" id="cards-conteiner">
             <header class="section-cards__header">
-                
                 <div class="section-cards__header-contain">
                     <div class="section-cards__header-prefix">Las mejores marcas en</div>
                     <div class="section-cards__header-suffix">
@@ -159,10 +257,10 @@
                     </div>
                     <div class="buy-now__container">
                         <a class="buy-now" href="#">Comprar AHORA</a>
-                        <a class="buy-now__cart" href="carrito.html" target="_blank" >
+                        <a class="buy-now__cart">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <a class="buy-now__heart" href="#">
+                        <a class="buy-now__heart">
                             <i class="fas fa-heart"></i>
                         </a>
                     </div>
@@ -187,10 +285,10 @@
                     </div>
                     <div class="buy-now__container">
                         <a class="buy-now" href="#">Comprar AHORA</a>
-                        <a class="buy-now__cart" href="carrito.html" target="_blank" >
+                        <a class="buy-now__cart">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <a class="buy-now__heart" href="#">
+                        <a class="buy-now__heart">
                             <i class="fas fa-heart"></i>
                         </a>
                     </div>
@@ -215,10 +313,10 @@
                     </div>
                     <div class="buy-now__container">
                         <a class="buy-now" href="#">Comprar AHORA</a>
-                        <a class="buy-now__cart" href="carrito.html" target="_blank" >
+                        <a class="buy-now__cart">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <a class="buy-now__heart" href="#">
+                        <a class="buy-now__heart">
                             <i class="fas fa-heart"></i>
                         </a>
                     </div>
@@ -243,10 +341,10 @@
                     </div>
                     <div class="buy-now__container">
                         <a class="buy-now" href="#">Comprar AHORA</a>
-                        <a class="buy-now__cart" href="carrito.html" target="_blank" >
+                        <a class="buy-now__cart">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <a class="buy-now__heart" href="#">
+                        <a class="buy-now__heart">
                             <i class="fas fa-heart"></i>
                         </a>
                     </div>
@@ -271,12 +369,13 @@
                     </div>
                     <div class="buy-now__container">
                         <a class="buy-now" href="#">Comprar AHORA</a>
-                        <a class="buy-now__cart" href="carrito.html" target="_blank" >
+                        <a class="buy-now__cart">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <a class="buy-now__heart" href="#">
+                        <a class="buy-now__heart">
                             <i class="fas fa-heart"></i>
                         </a>
+                    </div>
                     </div>
                 </div>
 
@@ -299,12 +398,13 @@
                     </div>
                     <div class="buy-now__container">
                         <a class="buy-now" href="#">Comprar AHORA</a>
-                        <a class="buy-now__cart" href="carrito.html" target="_blank" >
+                        <a class="buy-now__cart">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <a class="buy-now__heart" href="#">
+                        <a class="buy-now__heart">
                             <i class="fas fa-heart"></i>
                         </a>
+                    </div>
                     </div>
                 </div>
 
@@ -327,12 +427,13 @@
                     </div>
                     <div class="buy-now__container">
                         <a class="buy-now" href="#">Comprar AHORA</a>
-                        <a class="buy-now__cart" href="carrito.html" target="_blank" >
+                        <a class="buy-now__cart">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <a class="buy-now__heart" href="#">
+                        <a class="buy-now__heart">
                             <i class="fas fa-heart"></i>
                         </a>
+                    </div>
                     </div>
                 </div>
 
@@ -355,12 +456,13 @@
                     </div>
                     <div class="buy-now__container">
                         <a class="buy-now" href="#">Comprar AHORA</a>
-                        <a class="buy-now__cart" href="carrito.html" target="_blank" >
+                        <a class="buy-now__cart">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <a class="buy-now__heart" href="#">
+                        <a class="buy-now__heart">
                             <i class="fas fa-heart"></i>
                         </a>
+                    </div>
                     </div>
                 </div>
             </section>
@@ -396,6 +498,42 @@
             </div>
         </section>
     
+        <div class="bot-bar_separador"></div>
+
+        <section class="payment-container">
+            <div class="payment__modulo">
+                <img src="img/index/creditCard.png" alt="Tarjeta de Crédito">
+                <p>Tarjeta de Crédito</p>
+            </div>
+            <hr class="payment--barra">
+            <div class="payment__modulo">
+                <img src="img/index/debitCard.png" alt="Tarjeta de Débito">
+                <p>Tarjeta de Débito</p>
+            </div>
+            <hr class="payment--barra">
+            <div class="payment__modulo">
+                <img src="img/index/cuotas.png" alt="Cuotas">
+                <p>Cuotas a tu medida</p>
+            </div>
+            <hr class="payment--barra">
+            <div class="payment__modulo">
+                <img src="img/index/efe.png" alt="Efectivo">
+                <p>Efectivo</p>
+            </div>
+
+            <div class="payment__modulo--promo">
+                <a class="link-promociones" href="#">
+                    <p>Ver todas las promociones y métodos de pago</p>
+                </a>
+            </div>
+            <div class="payment__modulo--promo">
+                <img src="img/index/debitCard.png" alt="Tarjeta de Débito">
+                <img src="img/index/creditCard.png" alt="Tarjeta de Crédito">
+                <p>Todas las tarjetas</p>
+            </div>
+
+        </section>
+
     </main>    
 
     <footer class="footer">
@@ -436,5 +574,7 @@
 
     </footer>
 
+    <script src="js/slide.js"></script>
+    <script src="js/header.js"></script>
 </body>
 </html>
